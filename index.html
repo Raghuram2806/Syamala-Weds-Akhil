@@ -628,8 +628,35 @@
 <section class="hero">
   <div class="ganesh-badge">
     <svg class="ganesh-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="50" cy="50" r="48" fill="none" stroke="#C9973A" stroke-width="1.5" stroke-dasharray="4 3"/>
-      <text x="50" y="58" text-anchor="middle" font-size="45" fill="#C9973A">🪔</text>
+      <!-- Outer ring -->
+      <circle cx="50" cy="50" r="47" fill="none" stroke="#C9973A" stroke-width="1" stroke-dasharray="3 3"/>
+      <!-- Confetti pieces scattered around -->
+      <!-- Stars -->
+      <polygon points="50,18 52,24 58,24 53,28 55,34 50,30 45,34 47,28 42,24 48,24" fill="#C9973A" opacity="0.9"/>
+      <!-- Streamers / ribbons -->
+      <path d="M22 30 Q26 26 24 20 Q30 22 28 28 Q32 24 36 26" fill="none" stroke="#E8C87A" stroke-width="1.8" stroke-linecap="round"/>
+      <path d="M78 30 Q74 26 76 20 Q70 22 72 28 Q68 24 64 26" fill="none" stroke="#E8C87A" stroke-width="1.8" stroke-linecap="round"/>
+      <!-- Small diamond confetti -->
+      <rect x="20" y="44" width="6" height="6" rx="1" fill="#C9973A" opacity="0.7" transform="rotate(30 23 47)"/>
+      <rect x="74" y="44" width="6" height="6" rx="1" fill="#9B2C2C" opacity="0.7" transform="rotate(-20 77 47)"/>
+      <rect x="30" y="68" width="5" height="5" rx="1" fill="#E8C87A" opacity="0.8" transform="rotate(15 32 70)"/>
+      <rect x="65" y="68" width="5" height="5" rx="1" fill="#C9973A" opacity="0.8" transform="rotate(-35 67 70)"/>
+      <!-- Small circles -->
+      <circle cx="28" cy="58" r="3" fill="#E8C87A" opacity="0.6"/>
+      <circle cx="72" cy="58" r="3" fill="#9B2C2C" opacity="0.6"/>
+      <circle cx="38" cy="78" r="2.5" fill="#C9973A" opacity="0.7"/>
+      <circle cx="62" cy="78" r="2.5" fill="#E8C87A" opacity="0.7"/>
+      <circle cx="50" cy="82" r="2" fill="#C9973A" opacity="0.5"/>
+      <!-- Dotted confetti top -->
+      <circle cx="35" cy="28" r="2" fill="#9B2C2C" opacity="0.7"/>
+      <circle cx="65" cy="28" r="2" fill="#E8C87A" opacity="0.7"/>
+      <circle cx="25" cy="38" r="1.5" fill="#C9973A" opacity="0.6"/>
+      <circle cx="75" cy="38" r="1.5" fill="#C9973A" opacity="0.6"/>
+      <!-- Celebration lines / sparks -->
+      <line x1="50" y1="42" x2="50" y2="72" stroke="#C9973A" stroke-width="0.5" stroke-dasharray="2 2" opacity="0.4"/>
+      <!-- Small triangle confetti -->
+      <polygon points="43,60 47,54 51,60" fill="#E8C87A" opacity="0.6"/>
+      <polygon points="57,60 53,54 49,60" fill="#9B2C2C" opacity="0.5"/>
     </svg>
   </div>
   <div class="hero-ornament">✦ &nbsp; శుభమస్తు &nbsp; ✦</div>
@@ -731,7 +758,7 @@
           <div class="event-date">FRIDAY · 10TH APRIL 2026 · 8:26 PM (MUHURTHAM)</div>
           <div class="event-details">
             <strong>Vishwanatha Gardens</strong><br>
-            KP Nagar, HMT Road, Miyapur, Hyderabad<br><br>
+            JP Nagar, HMT Road, Miyapur, Hyderabad<br><br>
             The sacred wedding ceremony under the auspicious Varabha Nama Samvatsara. The muhurtham is at 8:26 PM — a moment written in the stars.
           </div>
           <span class="event-tag">Main Wedding</span>
@@ -747,7 +774,7 @@
           <div class="event-date">FRIDAY · 10TH APRIL 2026 · FROM 7 PM</div>
           <div class="event-details">
             <strong>Vishwanatha Gardens</strong><br>
-            KP Nagar, HMT Road, Miyapur, Hyderabad<br><br>
+            JP Nagar, HMT Road, Miyapur, Hyderabad<br><br>
             Dinner from 7 PM onwards at the Kalyana Vedika. Join us to celebrate the newly weds with love, warmth and festivity.
           </div>
           <span class="event-tag">Reception</span>
@@ -816,8 +843,14 @@
     <div class="families-grid">
       <div class="family-block">
         <div class="family-side">Bride's Family</div>
-        <div class="family-name">Sri Nadimpalli Trimurthy Raju</div>
-        <div class="family-subtitle">& Srimathi Madhuri</div>
+        <div style="margin-bottom:1rem;">
+          <div style="font-size:0.6rem; font-family:'Cinzel',serif; letter-spacing:0.25em; color:rgba(201,151,58,0.5); margin-bottom:0.3rem;">FATHER</div>
+          <div class="family-name">Sri Nadimpalli Trimurthy Raju</div>
+        </div>
+        <div style="margin-bottom:1rem;">
+          <div style="font-size:0.6rem; font-family:'Cinzel',serif; letter-spacing:0.25em; color:rgba(201,151,58,0.5); margin-bottom:0.3rem;">MOTHER</div>
+          <div class="family-name">Smt. Nadimpalli Madhuri</div>
+        </div>
         <div style="margin: 1.5rem 0; height:1px; background: linear-gradient(90deg, transparent, rgba(201,151,58,0.3), transparent);"></div>
         <div style="font-size:0.8rem; color:rgba(250,246,238,0.35); letter-spacing:0.05em; line-height:1.8;">
           SK Residency, Plot No. 1100<br>
@@ -829,21 +862,61 @@
 
       <div class="family-block">
         <div class="family-side">Groom's Family</div>
-        <div class="family-name">Sri Nadimpalli Ramaraju</div>
-        <div class="family-subtitle">& Srimathi Parvati Devi</div>
+        <div style="margin-bottom:1rem;">
+          <div style="font-size:0.6rem; font-family:'Cinzel',serif; letter-spacing:0.25em; color:rgba(201,151,58,0.5); margin-bottom:0.3rem;">FATHER</div>
+          <div class="family-name">Late Sri Kunaparaju Seetharamaraju</div>
+        </div>
+        <div style="margin-bottom:1rem;">
+          <div style="font-size:0.6rem; font-family:'Cinzel',serif; letter-spacing:0.25em; color:rgba(201,151,58,0.5); margin-bottom:0.3rem;">MOTHER</div>
+          <div class="family-name">Smt. Kunaparaju Madhavi</div>
+        </div>
         <div style="margin: 1.5rem 0; height:1px; background: linear-gradient(90deg, transparent, rgba(201,151,58,0.3), transparent);"></div>
         <div style="font-size:0.8rem; color:rgba(250,246,238,0.35); letter-spacing:0.05em; line-height:1.8;">
-          Nellore District<br>
-          Pedharangi Kalanu Village<br>
-          <em style="color:rgba(250,246,238,0.25);">Son of Smt. Muddavenkati Sitaramaraju</em>
+          Flat No. 104, Virat Residency<br>
+          Beside Micro Furniture, Dulapally Road<br>
+          Kompally, Secunderabad, Telangana<br>
+          <span style="color: rgba(201,151,58,0.6);">8498870117 · 9100296005</span>
         </div>
+      </div>
+    </div>
+
+    <!-- Well Wishers -->
+    <div style="margin-top: 3rem;">
+      <div class="section-label" style="margin-bottom:1rem;">With Warm Wishes From</div>
+      <div style="border: 1px solid rgba(201,151,58,0.2); background: rgba(201,151,58,0.03); padding: 2.5rem; text-align:center; max-width: 700px; margin: 0 auto;">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+          <div>
+            <div style="font-size:0.6rem; font-family:'Cinzel',serif; letter-spacing:0.25em; color:rgba(201,151,58,0.5); margin-bottom:0.5rem;">WELL-WISHER</div>
+            <div class="family-name" style="font-size:1.15rem;">Sri Nallaparaju Anjaneya Raju</div>
+          </div>
+          <div>
+            <div style="font-size:0.6rem; font-family:'Cinzel',serif; letter-spacing:0.25em; color:rgba(201,151,58,0.5); margin-bottom:0.5rem;">WELL-WISHER</div>
+            <div class="family-name" style="font-size:1.15rem;">Sri Penmetsa Surya Narayana Raju</div>
+          </div>
+        </div>
+        <div style="margin-top:2rem; text-align:center;">
+          <div style="font-size:0.6rem; font-family:'Cinzel',serif; letter-spacing:0.25em; color:rgba(201,151,58,0.5); margin-bottom:0.5rem;">WELL-WISHER</div>
+          <div class="family-name" style="font-size:1.15rem;">DivyaShri Datla Surya Narayana Raju</div>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top:2rem;">
+          <div>
+            <div style="font-size:0.6rem; font-family:'Cinzel',serif; letter-spacing:0.25em; color:rgba(201,151,58,0.5); margin-bottom:0.5rem;">WELL-WISHER</div>
+            <div class="family-name" style="font-size:1.15rem;">Sri Rudraraju Venkata Surya Narayana Raju</div>
+          </div>
+          <div>
+            <div style="font-size:0.6rem; font-family:'Cinzel',serif; letter-spacing:0.25em; color:rgba(201,151,58,0.5); margin-bottom:0.5rem;">WELL-WISHER</div>
+            <div class="family-name" style="font-size:1.15rem;">Sri Sagiraju Rama Surpa Raju</div>
+          </div>
+        </div>
+        <div style="margin-top:2rem; height:1px; background: linear-gradient(90deg, transparent, rgba(201,151,58,0.3), transparent);"></div>
+        <div style="margin-top:1.2rem; font-size:0.85rem; color:rgba(250,246,238,0.4); font-style:italic; letter-spacing:0.08em;">మరియు బంధుమిత్రుల అభినందనలతో</div>
+        <div style="font-size:0.75rem; color:rgba(250,246,238,0.25); letter-spacing:0.1em; margin-top:0.3rem;">& With the blessings of all relatives and friends</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Venue -->
-<section id="venue" style="padding-bottom: 4rem;">
+<!-- Venue --> style="padding-bottom: 4rem;">
   <div class="section-inner">
     <div class="section-label">Wedding Venue</div>
     <h2 class="section-title">Vishwanatha Gardens</h2>
@@ -853,10 +926,13 @@
       <div style="font-size:2rem; margin-bottom:1rem;">🏛️</div>
       <div class="venue-name">Vishwanatha Gardens</div>
       <div class="venue-address">
-        KP Nagar, HMT Road<br>
+        JP Nagar, HMT Road<br>
         Miyapur, Hyderabad<br><br>
         <span style="color: rgba(201,151,58,0.6); font-family:'Cinzel',serif; font-size:0.7rem; letter-spacing:0.15em;">10th April 2026 · Muhurtham 08:26 PM</span>
       </div>
+      <a href="https://www.google.com/maps/place/Vishwanaadha+Gardens/@17.5079766,78.3512095,17z/data=!3m1!4b1!4m6!3m5!1s0x3bcb9276c380b2c1:0x6963b94af59801cc!8m2!3d17.5079766!4d78.3537844!16s%2Fg%2F119x30yz4?entry=ttu&g_ep=EgoyMDI2MDMyMy4xIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:0.5rem; margin-top:1.8rem; padding:0.6rem 1.5rem; border:1px solid rgba(201,151,58,0.4); color:var(--gold); font-family:'Cinzel',serif; font-size:0.65rem; letter-spacing:0.2em; text-decoration:none; transition:all 0.3s ease;" onmouseover="this.style.background='rgba(201,151,58,0.1)'; this.style.borderColor='rgba(201,151,58,0.7)'" onmouseout="this.style.background='transparent'; this.style.borderColor='rgba(201,151,58,0.4)'">
+        📍 &nbsp; GET DIRECTIONS
+      </a>
     </div>
   </div>
 </section>
